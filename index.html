@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        #form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        #form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        #form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid  rgb(234, 223, 223);
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form id="form">
+            <label for="firstname">Name</label>
+            <input id="firstname" type="text" placeholder="Firstname..." required>
+
+            <label for="lastname">Lastname</label>
+            <input id="lastname" type="text" placeholder="Lastname..." required>
+
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="Age..." required>
+
+            <label for="image">Image</label>
+            <input id="image" type="text" placeholder="Image URL..." required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email..." required>
+
+            <button type="button" id="button">Save</button>
+        </form>
+    </div>
+
+    <div id="wrapper"></div>
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
